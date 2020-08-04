@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <!-- defer so it loads after our body -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- div for error message -->
+    <div id="error"></div>
+
+    <!-- default values -->
+    <form id="form" action="/" method="GET">
+        <!-- name -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <!-- could add "required at the end of above line and browser would hold the form" -->
+        </div>
+
+        <!-- password -->
+        <div>
+            <label for="name">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
